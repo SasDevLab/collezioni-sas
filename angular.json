@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "modellini-site:build:production"
+              "buildTarget": "modellini-site:build:production"
             },
             "development": {
-              "browserTarget": "modellini-site:build:development"
+              "buildTarget": "modellini-site:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "modellini-site:build"
+            "buildTarget": "modellini-site:build"
           }
         },
         "test": {
