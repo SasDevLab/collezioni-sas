@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let modellino of modellini$ |async">
+      <div class="card h-100 d-flex flex-column" (click)="openModal(modellino)">
+        <img [src]="modellino.imageUrl" class="card-img-top" alt="{{ modellino.nome }}" loading="lazy">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ modellino.nome }}</h5>
+          <p class="card-text flex-grow-1">{{ modellino.descrizione | slice:0:50 }}...</p>
+          <span class="btn btn-primary mt-auto">Dettagli</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modale per i dettagli del modellino -->
+  <app-gallery-detail [modellino]="selectedModellino">
+    <ng-container *ngTemplateOutlet="contentTemplate; context: { data: selectedModellino }"></ng-container>
+  </app-gallery-detail>

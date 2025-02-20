@@ -1,0 +1,23 @@
+<div class="modal fade" id="galleryDetailModal" tabindex="-1" aria-labelledby="galleryDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="galleryDetailModalLabel">{{ modellino?.nome }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <img [src]="modellino?.imageUrl" class="img-fluid" alt="{{ modellino?.nome }}">
+            </div>
+            <div class="col-md-6">
+              <p>{{ modellino?.descrizione }}</p>
+              <ng-content></ng-content> 
+              <!-- Contenuto dinamico -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

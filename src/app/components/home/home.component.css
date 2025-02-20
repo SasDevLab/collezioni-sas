@@ -1,0 +1,7 @@
+img {
+    width: 80%;         /* L'immagine occuperà l'80% della larghezza del suo contenitore */
+    height: auto;       /* Mantiene il rapporto di aspetto */
+    display: block;     /* Blocca l'immagine per centrarla */
+    margin: 0 auto;     /* Centra l'immagine */
+    max-width: 600px;   /* Limita la larghezza a 600px */
+  }

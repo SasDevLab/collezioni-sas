@@ -1,0 +1,9 @@
+<app-collection-form [collectionItem]="modelItem" [dataService]="buragoService" modelName="Burago" returnRouting="/admin/burago-list" (collectionItemChanged)="onCollectionItemChange($event)"
+modelName="Burago">
+    <div class="additional-fields">
+      <div class="mb-3">
+        <label for="anno" class="form-label">Anno</label>
+        <input type="number" class="form-control" id="anno" [(ngModel)]="modelItem.anno" name="anno" required>
+      </div>
+    </div>
+  </app-collection-form>

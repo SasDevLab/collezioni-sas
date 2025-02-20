@@ -1,0 +1,32 @@
+<div class="card-body" *ngIf="data">
+    <div class="info-blocks">
+      <div class="info-block lego-block">
+        <i class="fas fa-calendar-alt"></i>
+        <div>
+          <strong>Anno</strong>
+          <span>{{ data.anno }}</span>
+        </div>
+      </div>
+      <div class="info-block lego-block">
+        <i class="fas fa-cubes"></i>
+        <div>
+          <strong>Pezzi</strong>
+          <span>{{ data.pezzi }}</span>
+        </div>
+      </div>
+      <div class="info-block lego-block">
+        <i class="fas fa-barcode"></i>
+        <div>
+          <strong>Serial ID</strong>
+          <span>{{ data.serialId }}</span>
+        </div>
+      </div>
+      <div class="info-block lego-block">
+        <i class="fas fa-ruler-combined"></i>
+        <div>
+          <strong>Dimensioni</strong>
+          <span>{{ data.dimensioni }}</span>
+        </div>
+      </div>
+    </div>
+  </div>

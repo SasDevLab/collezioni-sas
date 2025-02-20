@@ -1,0 +1,15 @@
+<div class="">
+  <div class="container mt-4">
+    <div class="text-center mb-4">
+      <h1 class="display-4">Benvenuti nella Collezione LEGO</h1>
+      <p class="lead">Esplora la collezione di set LEGO</p>
+      <hr class="my-4">
+    </div>
+    <app-gallery [dataService]="modelliniService" [contentTemplate]="legoTemplate">
+    </app-gallery>
+
+    <ng-template #legoTemplate let-data="data">
+      <app-lego-detail [data]="data"></app-lego-detail>
+    </ng-template>
+  </div>
+</div>

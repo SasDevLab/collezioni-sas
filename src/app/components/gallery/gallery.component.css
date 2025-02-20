@@ -1,0 +1,47 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    box-sizing: border-box; /* Include il bordo e il padding nelle dimensioni della card */
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+    color: inherit; /* Mantiene il colore del testo */
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 300px; /* Altezza maggiore per le immagini */
+    object-fit: cover; /* Adatta l'immagine all'interno del riquadro mantenendo le proporzioni */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .card-title {
+    margin-bottom: 0.5rem;
+    min-height: 3rem; /* Imposta un'altezza minima per il titolo */
+    display: flex;
+    align-items: center; /* Centra verticalmente il testo del titolo */
+  }
+  
+  .card-text {
+    flex-grow: 1; /* Permette al testo di occupare tutto lo spazio disponibile */
+  }
+  
+  .btn {
+    align-self: flex-end;
+    margin-top: auto; /* Spinge il bottone verso il fondo del card-body */
+  }

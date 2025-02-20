@@ -1,0 +1,20 @@
+<app-collection-form [collectionItem]="modelItem" [dataService]="legoService" modelName="Lego" returnRouting="/admin/lego-list" (collectionItemChanged)="onCollectionItemChange($event)">
+  <div class="additional-fields">
+    <div class="mb-3">
+      <label for="pezzi" class="form-label">Pezzi</label>
+      <input type="number" class="form-control" id="pezzi" [(ngModel)]="modelItem.pezzi" name="pezzi" required>
+    </div>
+    <div class="mb-3">
+      <label for="anno" class="form-label">Anno</label>
+      <input type="number" class="form-control" id="anno" [(ngModel)]="modelItem.anno" name="anno" required>
+    </div>
+    <div class="mb-3">
+      <label for="serialId" class="form-label">Serial ID</label>
+      <input type="number" class="form-control" id="serialId" [(ngModel)]="modelItem.serialId" name="serialId" required>
+    </div>
+    <div class="mb-3">
+      <label for="dimensioni" class="form-label">Dimensioni</label>
+      <input type="text" class="form-control" id="dimensioni" [(ngModel)]="modelItem.dimensioni" name="dimensioni" required>
+    </div>
+  </div>
+</app-collection-form>
