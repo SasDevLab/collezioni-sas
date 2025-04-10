@@ -1,7 +1,7 @@
 import { importProvidersFrom, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { firebaseConfig } from '../environements/environment';
+import { firebaseConfig } from '../environments/environment';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { HomeComponent } from './components/home/home.component'
