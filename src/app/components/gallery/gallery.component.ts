@@ -10,7 +10,7 @@ import { ImageCacheService } from 'src/app/services/image-cache.service';
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.css']
 })
-export class GalleryComponent extends BaseCollectionFormComponent implements OnInit {
+export class GalleryComponent extends BaseCollectionFormComponent {
  
   @Input() contentTemplate: TemplateRef<any> | null = null;
   selectedModellino: CollectionItem | undefined;
@@ -26,7 +26,7 @@ export class GalleryComponent extends BaseCollectionFormComponent implements OnI
     this.modellini$ = this.dataService.getAll().pipe(
       switchMap((modellini) => {
         const cachedImages$ = modellini.map(modellino => 
-          from(this.imageCacheService.cacheImage(modellino.imageUrl)).pipe(
+          from(this.imageCacheService.fetchAndCacheImage(modellino.imageUrl)).pipe(
             map(cachedImageUrl => {
               modellino.imageUrl = cachedImageUrl;
               return modellino;

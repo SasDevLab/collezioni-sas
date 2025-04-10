@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #f0f0f0; /* Colore di sfondo chiaro */
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif; /* Font Open Sans */
+  }
+  
+  .container {
+    background-color: #ffffff; /* Colore di sfondo bianco per il contenuto */
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+  }
+  
+  /* Stile per la navbar */
+  .navbar {
+    background-color: #2c3e50; /* Blu scuro più spento */
+    padding: 10px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
+  .navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Colore bianco */
+    text-decoration: none;
+  }
+  
+  /* Stile globale per il contenitore principale di ogni pagina */
+  .main-content {
+    background-color: #ffffff; /* Colore di sfondo bianco */
+    padding: 40px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Rimuovere il margine superiore */
+    max-width: 1200px;
+  }
+  
+  /* Stile personalizzato per i pulsanti Bootstrap */
+  .btn-primary {
+    background-color: #2c3e50; /* Colore della navbar */
+    border-color: #2c3e50; /* Colore della navbar */
+    color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+    border-radius: 50px; /* Bordo arrotondato */
+    padding: 10px 20px; /* Aumenta il padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Aggiungi ombra */
+  }
+  
+  .btn-primary:hover {
+    background-color: #1a1f36; /* Colore più scuro per l'hover */
+    border-color: #1a1f36; /* Colore più scuro per l'hover */
+  }
+  
+  .btn-primary:focus, .btn-primary:active {
+    background-color: #1a1f36; /* Colore più scuro per il focus e l'attivo */
+    border-color: #1a1f36; /* Colore più scuro per il focus e l'attivo */
+    box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.5); /* Ombra per il focus */
+  }
+  
+  /* Stile per le icone */
+  .info-block i {
+    color: #2c3e50; /* Colore della navbar e dei pulsanti */
+  }

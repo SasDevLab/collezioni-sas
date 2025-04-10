@@ -1,31 +1,30 @@
-<div class="container mt-4 collectionItem-form">
-  <h2>{{ isEditMode ? 'Modifica ' + modelName : 'Inserisci ' + modelName }}</h2>
-  <form (ngSubmit)="onSubmit()">
-    <div class="mb-3">
-      <label for="nome" class="form-label">Nome</label>
-      <input type="text" class="form-control" id="nome" [(ngModel)]="collectionItem.nome" name="nome" required>
-    </div>
-    <div class="mb-3">
-      <label for="descrizione" class="form-label">Descrizione</label>
-      <textarea class="form-control" id="descrizione" [(ngModel)]="collectionItem.descrizione" name="descrizione" required></textarea>
-    </div>
-    <ng-content select=".additional-fields"></ng-content>
-    <div class="mb-3" *ngIf="collectionItem.imageUrl">
-      <label for="image" class="form-label">Immagine Attuale</label>
-      <div>
-        <img [src]="collectionItem.imageUrl" alt="{{ collectionItem.nome }}" class="img-thumbnail" style="width: 200px; height: auto;">
-      </div>
-    </div>
-    <div class="mb-3">
-      <label for="image" class="form-label">Modifica Immagine</label>
-      <input type="file" class="form-control" id="image" (change)="onFileSelected($event)">
-    </div>
-    <div class="d-flex justify-content-between">
-      <button type="submit" class="btn btn-primary">{{ isEditMode ? 'Aggiorna' : 'Inserisci' }}</button>
-      <button type="button" class="btn btn-danger" (click)="onCancel()">Annulla</button>
-    </div>
-  </form>
-  <div *ngIf="errorMessage" class="alert alert-danger mt-3" role="alert">
-    {{ errorMessage }}
+
+<h2>{{ isEditMode ? 'Modifica ' + modelName : 'Inserisci ' + modelName }}</h2>
+<form (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label for="nome" class="form-label">Nome</label>
+    <input type="text" class="form-control" id="nome" [(ngModel)]="collectionItem.nome" name="nome" required>
   </div>
+  <div class="mb-3">
+    <label for="descrizione" class="form-label">Descrizione</label>
+    <textarea class="form-control" id="descrizione" [(ngModel)]="collectionItem.descrizione" name="descrizione" required></textarea>
+  </div>
+  <ng-content select=".additional-fields"></ng-content>
+  <div class="mb-3" *ngIf="collectionItem.imageUrl">
+    <label for="image" class="form-label">Immagine Attuale</label>
+    <div>
+      <img [src]="collectionItem.imageUrl" alt="{{ collectionItem.nome }}" class="img-thumbnail" style="width: 200px; height: auto;">
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="image" class="form-label">Modifica Immagine</label>
+    <input type="file" class="form-control" id="image" (change)="onFileSelected($event)">
+  </div>
+  <div class="d-flex justify-content-between">
+    <button type="submit" class="btn btn-primary">{{ isEditMode ? 'Aggiorna' : 'Inserisci' }}</button>
+    <button type="button" class="btn btn-danger" (click)="onCancel()">Annulla</button>
+  </div>
+</form>
+<div *ngIf="errorMessage" class="alert alert-danger mt-3" role="alert">
+  {{ errorMessage }}
 </div>

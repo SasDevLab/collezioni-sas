@@ -1,15 +1,12 @@
-<div class="">
-    <div class="container mt-4">
-      <div class="text-center mb-4">
-        <h1 class="display-4">Benvenuti nella Collezione Die-Cast</h1>
-        <p class="lead">Esplora la collezione di modelli Die-Cast</p>
-        <hr class="my-4">
-      </div>
-      <app-gallery [dataService]="modelliniService" >
-      </app-gallery>
-  
-<!--       <ng-template #legoTemplate let-data="data">
-        <app-lego-detail [data]="data"></app-lego-detail>
-      </ng-template> -->
-    </div>
-  </div>
+
+<div class="text-center mb-4">
+  <h1 class="display-4">Benvenuti nella Collezione Die-Cast 🚗</h1>
+  <p class="lead">Esplora la collezione di modelli Die-Cast e scopri i dettagli di ogni modello!</p>
+  <hr class="my-4">
+</div>
+<app-gallery [dataService]="modelliniService" [contentTemplate]="buragoTemplate">
+</app-gallery>
+
+<ng-template #buragoTemplate let-data="data">
+  <app-burago-detail [data]="data"></app-burago-detail>
+</ng-template>

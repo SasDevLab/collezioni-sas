@@ -1,0 +1,39 @@
+<div class="card-body" *ngIf="data">
+    <div class="info-blocks">
+      <div class="info-block diecast-block">
+        <i class="fas fa-calendar-alt"></i>
+        <div>
+          <strong>Anno</strong>
+          <span>{{ data.anno }}</span>
+        </div>
+      </div>
+      <div class="info-block diecast-block">
+        <i class="fas fa-ruler-combined"></i>
+        <div>
+          <strong>Scala</strong>
+          <span>{{ data.scala }}</span>
+        </div>
+      </div>
+      <div class="info-block diecast-block">
+        <i class="fas fa-industry"></i>
+        <div>
+          <strong>Produttore</strong>
+          <span>{{ data.produttore }}</span>
+        </div>
+      </div>
+      <div class="info-block diecast-block">
+        <i class="fas fa-barcode"></i>
+        <div>
+          <strong>Codice</strong>
+          <span>{{ data.codice }}</span>
+        </div>
+      </div>
+      <div class="info-block diecast-block">
+        <i class="fas fa-tags"></i>
+        <div>
+          <strong>Serie</strong>
+          <span>{{ data.serie }}</span>
+        </div>
+      </div>
+    </div>
+  </div>

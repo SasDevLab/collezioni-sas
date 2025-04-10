@@ -1,9 +1,28 @@
-<app-collection-form [collectionItem]="modelItem" [dataService]="buragoService" modelName="Burago" returnRouting="/admin/burago-list" (collectionItemChanged)="onCollectionItemChange($event)"
-modelName="Burago">
-    <div class="additional-fields">
-      <div class="mb-3">
-        <label for="anno" class="form-label">Anno</label>
-        <input type="number" class="form-control" id="anno" [(ngModel)]="modelItem.anno" name="anno" required>
-      </div>
+<app-collection-form [collectionItem]="modelItem" [dataService]="buragoService" modelName="Burago" returnRouting="/admin/burago-list" (collectionItemChanged)="onCollectionItemChange($event)">
+  <div class="additional-fields">
+    <div class="mb-3">
+      <label for="anno" class="form-label">Anno</label>
+      <input type="number" class="form-control" id="anno" [(ngModel)]="modelItem.anno" name="anno" required>
     </div>
-  </app-collection-form>
+    <div class="mb-3">
+      <label for="scala" class="form-label">Scala</label>
+      <select class="form-control" id="scala" [(ngModel)]="modelItem.scala" name="scala" required>
+        <option value="1/18">1/18</option>
+        <option value="1/24">1/24</option>
+        <option value="1/43">1/43</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="produttore" class="form-label">Produttore</label>
+      <input type="text" class="form-control" id="produttore" [(ngModel)]="modelItem.produttore" name="produttore" required>
+    </div>
+    <div class="mb-3">
+      <label for="codice" class="form-label">Codice</label>
+      <input type="text" class="form-control" id="codice" [(ngModel)]="modelItem.codice" name="codice" required>
+    </div>
+    <div class="mb-3">
+      <label for="serie" class="form-label">Serie</label>
+      <input type="text" class="form-control" id="serie" [(ngModel)]="modelItem.serie" name="serie" required>
+    </div>
+  </div>
+</app-collection-form>

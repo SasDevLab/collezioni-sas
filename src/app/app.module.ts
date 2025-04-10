@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { importProvidersFrom, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { firebaseConfig } from '../environements/environment';
@@ -16,6 +16,7 @@ import { BaseCollectionFormComponent } from './components/base-collection-form/b
 import { ChildModelCollectionFormComponent } from './components/child-model-collection-form/child-model-collection-form.component';
 import { LegoDetailComponent } from './components/lego-gallery/lego-detail/lego-detail.component';
 import { BuragoGalleryComponent } from './components/burago-gallery/burago-gallery.component';
+import { BuragoDetailComponent } from './components/burago-gallery/burago-detail/burago-detail.component';
 
 @NgModule({
   declarations: [
@@ -27,18 +28,20 @@ import { BuragoGalleryComponent } from './components/burago-gallery/burago-galle
     BaseCollectionFormComponent,
     ChildModelCollectionFormComponent,
     LegoDetailComponent,
-    BuragoGalleryComponent
+    BuragoGalleryComponent,
+    BuragoDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    provideFirebaseApp(() => initializeApp(firebaseConfig)),
-    provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore()),
-    provideRemoteConfig(() => getRemoteConfig()),
-    provideStorage( () => getStorage())
   ],
-  providers: [],
+  providers: [
+      provideFirebaseApp(() => initializeApp(firebaseConfig)),
+      provideAuth(() => getAuth()),
+      provideFirestore(() => getFirestore()),
+      provideRemoteConfig(() => getRemoteConfig()),
+      provideStorage(() => getStorage())
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

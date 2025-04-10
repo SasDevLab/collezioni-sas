@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
-import { BuragoModel } from 'src/app/Models/BuragoModel';
 import { BuragoService } from 'src/app/services/repository/burago.service';
 
 @Component({
