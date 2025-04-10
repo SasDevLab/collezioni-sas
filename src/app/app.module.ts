@@ -36,7 +36,7 @@ import { BuragoDetailComponent } from './components/burago-gallery/burago-detail
     AppRoutingModule, 
   ],
   providers: [
-      provideFirebaseApp(() => initializeApp(firebaseConfig)),
+      provideFirebaseApp(() => initializeApp(firebaseConfig.firebase)),
       provideAuth(() => getAuth()),
       provideFirestore(() => getFirestore()),
       provideRemoteConfig(() => getRemoteConfig()),

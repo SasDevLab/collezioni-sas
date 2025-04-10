@@ -20,6 +20,9 @@ jobs:
       - name: 📦 Install dependencies
         run: npm install
 
+      - name: 📂 Ensure environments directory exists
+        run: mkdir -p src/environments
+
       - name: 📝 Generate environment.prod.ts
         run: node scripts/generate-env.js
         env:
