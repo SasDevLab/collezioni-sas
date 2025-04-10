@@ -34,7 +34,7 @@ jobs:
         run: npm run build -- --configuration production
 
       - name: 🚀 Deploy to Firebase Hosting
-        uses: w9jds/firebase-action@v13
+        uses: w9jds/firebase-action@v2
         with:
           args: deploy --only hosting
         env:
