@@ -1,6 +1,6 @@
 # Collezioni-Sas 🚗🧱
 
-[![Angular](https://img.shields.io/badge/Angular-16.2.14-red?logo=angular)](https://angular.io/)
+[![Angular](https://img.shields.io/badge/Angular-17.3.12-red?logo=angular)](https://angular.io/)
 [![Build](https://github.com/Sas1989/modellini-site/actions/workflows/deploy.yml/badge.svg)](.github/workflows/deploy.yml)
 
 Collezioni SAS - Esplora le nostre gallerie di modellini Lego e Burago.
@@ -11,7 +11,7 @@ Collezioni SAS - Esplora le nostre gallerie di modellini Lego e Burago.
 
 ## Descrizione
 
-ModelliniSite è una web app realizzata con Angular che permette di esplorare collezioni di modellini Lego e Burago. Il sito offre una galleria interattiva, informazioni dettagliate sui modelli e un'interfaccia moderna e responsiva.
+Collezioni-Sas è una web app realizzata con Angular che permette di esplorare collezioni di modellini Lego e Burago. Il sito offre una galleria interattiva, informazioni dettagliate sui modelli e un'interfaccia moderna e responsiva.
 
 ## Demo
 
@@ -27,7 +27,7 @@ ModelliniSite è una web app realizzata con Angular che permette di esplorare co
 
 ## Stack tecnologico
 
-- **Framework:** [Angular 16](https://angular.io/)
+- **Framework:** [Angular 17](https://angular.io/)
 - **Linguaggi:** TypeScript, HTML, CSS
 - **Hosting:** Firebase Hosting
 - **CI/CD:** GitHub Actions
