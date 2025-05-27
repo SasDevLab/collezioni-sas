@@ -5,6 +5,8 @@
 
 Collezioni SAS - Esplora le nostre gallerie di modellini Lego e Burago.
 
+![Logo collezioni-sas sito](src/assets/logo.png)
+
 ---
 
 ## Descrizione
