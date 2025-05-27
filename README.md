@@ -40,4 +40,4 @@ ModelliniSite è una web app realizzata con Angular che permette di esplorare co
 > Questo repository è open source a scopo dimostrativo e personale.  
 > Il codice è pubblico per trasparenza e portfolio.
 
-> Realizzato con ❤️ da Collezioni SAS
+> Realizzato con ❤️ da SAS
