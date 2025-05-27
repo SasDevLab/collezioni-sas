@@ -1,4 +1,4 @@
-# ModelliniSite 🚗🧱
+# Collezioni-Sas 🚗🧱
 
 [![Angular](https://img.shields.io/badge/Angular-16.2.14-red?logo=angular)](https://angular.io/)
 [![Build](https://github.com/Sas1989/modellini-site/actions/workflows/deploy.yml/badge.svg)](.github/workflows/deploy.yml)
