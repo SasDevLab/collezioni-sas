@@ -42,4 +42,4 @@ Collezioni-Sas è una web app realizzata con Angular che permette di esplorare c
 > Questo repository è open source a scopo dimostrativo e personale.  
 > Il codice è pubblico per trasparenza e portfolio.
 
-> Realizzato con ❤️ da SAS22
+> Realizzato con ❤️ da SAS
